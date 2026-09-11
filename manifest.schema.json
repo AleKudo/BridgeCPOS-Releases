@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BridgeCPOS update manifest",
+  "type": "object",
+  "required": ["suspended", "channel", "blockedVersions"],
+  "properties": {
+    "suspended": { "type": "boolean" },
+    "channel": { "enum": ["stable", "pilot"] },
+    "blockedVersions": { "type": "array", "items": { "type": "string" } },
+    "release": {
+      "type": ["object", "null"],
+      "required": ["version", "publishedAt", "packageUrl", "sha256", "rollbackCompatible"],
+      "properties": {
+        "version": { "type": "string" },
+        "publishedAt": { "type": "string", "format": "date-time" },
+        "packageUrl": { "type": "string", "format": "uri" },
+        "sha256": { "type": "string", "pattern": "^[A-Fa-f0-9]{64}$" },
+        "minimumVersion": { "type": ["string", "null"] },
+        "rollbackCompatible": { "type": "boolean" }
+      }
+    }
+  }
+}
