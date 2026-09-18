@@ -2,10 +2,10 @@
   "suspended": false,
   "channel": "pilot",
   "release": {
-    "version": "2026.09.17",
-    "publishedAt": "2026-09-18T15:01:29Z",
-    "packageUrl": "https://github.com/AleKudo/BridgeCPOS-Releases/releases/download/v2026.09.17-pilot/BridgeCPOS-2026.09.17.zip",
-    "sha256": "6d2f977be1019875625651f1c819ecbbe9435eca01f15e63dccd163301695b73",
+    "version": "2026.09.18",
+    "publishedAt": "2026-09-18T17:04:31Z",
+    "packageUrl": "https://github.com/AleKudo/BridgeCPOS-Releases/releases/download/v2026.09.18-pilot/BridgeCPOS-2026.09.18.zip",
+    "sha256": "b5cc6ee37dbc321cb5ecf31d06ec904d00e8d7e3f7403af1fbc9023461615d1e",
     "minimumVersion": "2026.09.11",
     "rollbackCompatible": true
   },
